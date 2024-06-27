@@ -20,8 +20,6 @@ for (let i = 0; i < arr.length; i++) {
     result[i] = arr[i] * 5;
 }
 console.log(result); // [5, 10, 15, 20, 25, 30]
-}
-console.log(result); // [5, 10, 15, 20]
 
 // Реалізація filter
 let arrFilter = [1, 2, 3, 4, 5, 6];
