@@ -1,17 +1,19 @@
 let arr = [1, 2, 3, 4, 5, 6];
 
+// Реалізація push
 let arr1 = [1, 2, 3];
 let elementToAdd = 4;
 arr[arr.length] = elementToAdd; // Додаємо елемент в кінець масиву
 console.log(arr); // [1, 2, 3, 4]
 
-
+// Реалізація pop
 let newarr = [1, 2, 3, 4];
 let lastElement = arr[arr.length - 1]; // Зберігаємо останній елемент
 arr.length = arr.length - 1; // Зменшуємо довжину масиву на 1
 console.log(lastElement); // 4
 console.log(arr); // [1, 2, 3]
 
+// Реалізація map
 let mapArr = [1, 2, 3, 4];
 let result = [];
 for (let i = 0; i < arr.length; i++) {
@@ -19,6 +21,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log(result); // [5, 10, 15, 20]
 
+// Реалізація filter
 let arrFilter = [1, 2, 3, 4, 5, 6];
 let newresult = [];
 for (let i = 0; i < arr.length; i++) {
