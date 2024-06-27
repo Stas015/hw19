@@ -1,23 +1,25 @@
 let arr = [1, 2, 3, 4, 5, 6];
 
 // Реалізація push
-let arr1 = [1, 2, 3];
-let elementToAdd = 4;
-arr[arr.length] = elementToAdd; // Додаємо елемент в кінець масиву
-console.log(arr); // [1, 2, 3, 4]
+let arr1 = [1, 2, 3, 4, 5, 6];
+let elementToAdd = 7; //додаємо 7
+arr[arr.length] = elementToAdd;
+console.log(arr); // [1, 2, 3, 4, 5, 6, 7]
 
 // Реалізація pop
-let newarr = [1, 2, 3, 4];
-let lastElement = arr[arr.length - 1]; // Зберігаємо останній елемент
-arr.length = arr.length - 1; // Зменшуємо довжину масиву на 1
-console.log(lastElement); // 4
-console.log(arr); // [1, 2, 3]
+let arrPop = [1, 2, 3, 4, 5, 6];
+let lastElement = arr[arr.length - 1];
+arr.length = arr.length - 1;
+console.log(lastElement); // 6
+console.log(arr); // [1, 2, 3, 4, 5]
 
 // Реалізація map
-let mapArr = [1, 2, 3, 4];
+let arrMap = [1, 2, 3, 4, 5, 6];
 let result = [];
 for (let i = 0; i < arr.length; i++) {
-    result[i] = arr[i] * 5; // Множимо кожен елемент на 5
+    result[i] = arr[i] * 5;
+}
+console.log(result); // [5, 10, 15, 20, 25, 30]
 }
 console.log(result); // [5, 10, 15, 20]
 
